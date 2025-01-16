@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furnitures site</title>
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Agu+Display&family=Charm:wght@400;700&family=Cookie&family=Rubik+Vinyl&display=swap"
+        rel="stylesheet">
+    <!--fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+    <style>
+        * {
+            font-family: "Agbalumo", serif;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- header -->
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-success bg-warning-subtle shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h3><b>Home Haven</b></h3>
+                </a>
+                <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse ms-5 ps-5" id="navbarNav">
+                    <ul class="navbar-nav  ms-5 ps-5">
+                        <li class="nav-item  ms-5 ps-5">
+                            <a class="nav-link active ms-5 ps-5" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="#">Furnitures</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="#">Pillos&Accessories</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link ">About us</a>
+                    </ul>
+                    <div class="nav-item me-auto ms-4">
+                        <input type="text" placeholder="searchproducts" class="form-control" style="width: 550px;">
+                    </div>
+                    <div class="nav-item ms-auto">
+                        <i class="fa-solid fa-cart-shopping fs-2 me-2"></i>
+                        <i class="fa-solid fa-user fs-2 ms-2"></i>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+    </section>
+ <br>
+
+    <!-- Crousel -->
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+                <div class="carousel-item active ms-5 ">
+                    <img src="https://cdn.pixabay.com/photo/2020/10/19/11/40/bedroom-5667527_640.jpg"
+                        class="d-block ms-4" height="670px" width="1550px">
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>Modern Elegance</h5>
+                        <p>This sophisticated is a perfect blend of form and function, adding a touch of modern elegance
+                            to your home.</p>
+                    </div>
+                </div>
+                <div class="carousel-item ms-5">
+                    <img src="https://cdn.pixabay.com/photo/2018/03/08/18/13/chair-3209341_640.jpg"
+                        class="d-block ms-4" height="670px" width="1550px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Stylish & Functional</h5>
+                        <p>This versatile piece seamlessly blends style and functionality, making it a must-have for any
+                            modern home.</p>
+                    </div>
+                </div>
+                <div class="carousel-item ms-5">
+                    <img src="https://cdn.pixabay.com/photo/2018/07/11/07/43/interior-3530455_640.jpg"
+                        class="d-block ms-4" height="670px" width="1550px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Designed for Living</h5>
+                        <p>Crafted with comfort and style in mind, this piece is designed to enhance your everyday
+                            living experience.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <hr>
+    <!-- Rounded Image -->
+    <section>
+        <div class="row m-5">
+            <h1 class="text-center">Todays Top picks </h1>
+            <p class="text-center">Experience our most beloved and highly-rated pieces</p>
+            <div class="col-3 border rounded-pill border-warning p-4">
+                <h5 class="text-center fs-2 me-auto">Under</h5>
+                <p class="text-center fs-3 me-auto"> 22999 </p>
+                <img src="https://images.pexels.com/photos/7737414/pexels-photo-7737414.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    height="300px" width="300px" class="rounded-pill shadow border border-3 border-warning ms-4">
+
+            </div>
+            <div class="col-3 border rounded-pill border-warning p-4">
+                <h5 class="text-center fs-2 me-auto">Under</h5>
+                <p class="text-center fs-3 me-auto"> 32999 </p>
+                <img src="https://images.pexels.com/photos/6960353/pexels-photo-6960353.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    height="300px" width="300px" class="rounded-pill shadow border border-3 border-warning ms-4">
+            </div>
+            <div class="col-3 border rounded-pill border-warning p-4">
+                <h5 class="text-center fs-2 me-auto">Under</h5>
+                <p class="text-center fs-3 me-auto"> 429989 </p>
+                <img src="https://images.pexels.com/photos/5526398/pexels-photo-5526398.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    height="300px" width="300px" class="rounded-pill shadow border border-3 border-warning ms-4">
+            </div>
+            <div class="col-3 border rounded-pill border-warning p-4">
+                <h5 class="text-center fs-2 me-auto">Under</h5>
+                <p class="text-center fs-3 me-auto"> 529999 </p>
+                <img src="https://images.pexels.com/photos/10795799/pexels-photo-10795799.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    height="300px" width="300px" class="rounded-pill shadow border border-3 border-warning ms-4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Card  -->
+    <div class="row m-5">
+        <h3 class="text-center"> New Items</h3>
+        <p class="text-center">Discover the items our customers can't get enough of.</p><br><br>
+        <div class="col-3">
+            <div class="card shadow" style="width: 18rem;">
+                <img src="https://images.pexels.com/photos/95684/pexels-photo-95684.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="card-img-top shadow border-3 border-dark" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="text-center"><a href="#" class="btn btn-primary">Book Now</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card shadow" style="width: 18rem;">
+                <img src="https://images.pexels.com/photos/12190227/pexels-photo-12190227.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="card-img-top shadow border-3 border-dark" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="text-center"><a href="#" class="btn btn-primary">Book Now</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card shadow" style="width: 18rem;">
+                <img src="https://images.pexels.com/photos/30196002/pexels-photo-30196002/free-photo-of-serene-oceanfront-dining-with-empty-table-and-chairs.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="card-img-top shadow border-3 border-dark" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="text-center"><a href="#" class="btn btn-primary">Book Now</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card shadow" style="width: 18rem;">
+                <img src="https://images.pexels.com/photos/30163038/pexels-photo-30163038/free-photo-of-cozy-outdoor-seating-with-mountain-view.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="card-img-top shadow border-3 border-dark" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <div class="text-center"><a href="#" class="btn btn-primary">Book Now</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Corusel With Card -->
+     <h3 class="text-center">Happy Customers, Happy Homes</h3><br>
+     <p class="text-center">Experience the Difference: Hear From Our Customers</p><br>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active ">
+                <div class="d-flex justify-content-around">
+                    <div class="card  border border-2 border-warning shadow " style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/30155343/pexels-photo-30155343/free-photo-of-vibrant-red-outdoor-furniture-in-snowy-setting.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            class="card-img-top" alt="..." height="300px" width="100px">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Armchair</h5>
+                            <p class="text-center">⭐⭐⭐⭐⭐ </p><h5 class="card-title text-center""> From kerala, Savidh</h5><hr>
+                            <p class="card-text">Provides comfortable support for reading or relaxing. Often features padded arms and a high back for added coziness. Ideal for creating a cozy reading nook..</p>
+
+                        </div>
+                    </div>
+                    <div class="card border border-2 border-warning shadow" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/8052692/pexels-photo-8052692.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            class="card-img-top" alt="..." height="300px" width="100px">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Rocking Chair</h5>
+                            <p class="text-center">⭐⭐⭐⭐⭐ </p><h5 class="card-title text-center""> From kerala, Savidh</h5><hr>
+                            <p class="card-text">Gently sways back and forth, offering a soothing and calming experience. Perfect for relaxation and meditation. A timeless classic that adds charm to any space.</p>
+
+                        </div>
+                    </div>
+                    <div class="card border border-2 border-warning shadow" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/4906241/pexels-photo-4906241.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            class="card-img-top" alt="..." height="300px" width="100px">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Recliner</h5>
+                            <p class="text-center">⭐⭐⭐⭐⭐ </p><h5 class="card-title text-center""> From kerala, Savidh</h5><hr>
+                            <p class="card-text">Offers adjustable positions, allowing for customized comfort. Ideal for lounging, watching TV, or simply unwinding after a long day..</p>
+
+                        </div>
+                    </div>
+                    <div class="card border border-2 border-warning shadow" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/5671060/pexels-photo-5671060.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            class="card-img-top" alt="..." height="300px" width="100px">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Dining Chair</h5>
+                            <p class="text-center">⭐⭐⭐⭐⭐ </p><h5 class="card-title text-center""> From kerala, Savidh</h5><hr>
+                            <p class="card-text">Designed for use around a dining table. Available in a wide variety of styles and materials to suit any dining room aesthetic.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="d-flex justify-content-around">
+                    <!-- Repeat the same structure for the next four cards -->
+                    <div class="card border border-2 border-warning shadow" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/18252672/pexels-photo-18252672/free-photo-of-modern-net-chairs-by-flowering-shrub-of-hydrangea.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            class="card-img-top" alt="..." height="300px" width="100px">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Office Chair</h5>
+                            <p class="text-center">⭐⭐⭐⭐⭐ </p><h5 class="card-title text-center""> From kerala, Savidh</h5><hr>
+                            <p class="card-text">Prioritizes ergonomics with features like adjustable height and lumbar support. Essential for maintaining comfort and productivity during long work hours.</p>
+
+                        </div>
+                    </div>
+                    <div class="card border border-2 border-warning shadow" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/13896367/pexels-photo-13896367.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            class="card-img-top" alt="..." height="300px" width="100px">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Bar Stool</h5>
+                            <p class="text-center">⭐⭐⭐⭐⭐ </p><h5 class="card-title text-center""> From kerala, Savidh</h5><hr>
+                            <p class="card-text"> Designed for sitting at high counters or bar tables. Offers a stylish and modern look, perfect for kitchen islands or home bars.</p>
+
+                        </div>
+                    </div>
+                    <div class="card border border-2 border-warning shadow" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/24280095/pexels-photo-24280095/free-photo-of-an-armchair-and-a-basket-of-flowers-standing-in-a-garden.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            class="card-img-top" alt="..." height="300px" width="100px">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Adirondack Chair</h5>
+                            <p class="text-center">⭐⭐⭐⭐⭐ </p><h5 class="card-title text-center""> From kerala, Savidh</h5><hr>
+                            <p class="card-text"> A classic outdoor chair with a sloped back for optimal comfort. Ideal for relaxing on a porch, patio, or in the garden.</p>
+
+                        </div>
+                    </div>
+                    <div class="card border border-2 border-warning shadow" style="width: 18rem;">
+                        <img src="https://images.pexels.com/photos/16551431/pexels-photo-16551431/free-photo-of-table-on-patio.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            class="card-img-top" alt="..." height="300px" width="100px">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Folding Chair</h5>
+                            <p class="text-center">⭐⭐⭐⭐⭐ </p><h5 class="card-title text-center""> From kerala, Savidh</h5><hr>
+                            <p class="card-text">Portable and easy to store, making them ideal for guests, outdoor events, or travel. Convenient and space-saving.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="d-flex justify-content-around">
+                    <!-- Repeat the same structure for the next four cards -->
+                    <!-- Add more cards as needed -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 9</h5>
+                            <p class="card-text">Description for Card 9.</p>
+
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 10</h5>
+                            <p class="card-text">Description for Card 10.</p>
+
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 11</h5>
+                            <p class="card-text">Description for Card 11.</p>
+
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 12</h5>
+                            <p class="card-text">Description for Card 12.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br>
+
+        <!-- Videos from youtube -->
+
+        <div class="container my-5">
+            <h3 class="text-center">Transform Your Space: Watch Now</h3>
+            <p class="text-center">Indulge in luxurious comfort with this stylish and contemporary bed.</p><br>
+            <div class="row g-4">
+                <!-- Video 1 -->
+                <div class="col-md-4">
+                    <div class="card border-2 border-warning shadow">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/NO67VMy3guM?si=piCo21aOLbJs33Jb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">How its made at Factory Luxurious SOFA</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 2 -->
+                <div class="col-md-4">
+                    <div class="card border-2 border-warning shadow">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/cFIUrmDehBo?si=cW2VrOO4ktI4z6O_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Detailed wayfair furniture unboxing & review!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 3 -->
+                <div class="col-md-4">
+                    <div class="card  border-2 border-warning shadow">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/I-t9xs1MPBY?si=VUteTA0WDFJAFX5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">EDRA 'On the Rocks' Sofa! Ultimate Comfort Style!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-warning-subtle text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="#" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="bg-warning-subtle">
+                <div class="container text-center text-md-start mt-5 bg-warning-subtle">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Home Hevan
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Wooden Chair</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Oak Wood Table</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Coffee Table</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">oak Tvstand</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Pricing</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> Kerala, Kochi 690634, India</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                info@homehevan.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 91 5647239852</p>
+                            <p><i class="fas fa-print me-3"></i> + 91 9856743657</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2025 Copyright:
+                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">SavidhPs.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+</body>
+
+</html>
